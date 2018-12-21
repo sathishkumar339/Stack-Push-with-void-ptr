@@ -47,6 +47,8 @@ int main() {
 
 		case EXIT_OP:
 			printf("Bye\n");
+			free(sd->start);
+			free(sd);
 			exit(1);
 		
 		default :
